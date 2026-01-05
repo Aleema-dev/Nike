@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #000, #111);
+  padding: 30px 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #e10600;
+}
+
+.hero-content {
+  margin-top: 140px;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 15px 40px;
+  border: none;
+  background: #e10600;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-content button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(225,6,0,0.6);
+}
+
+/* PRODUCTS */
+.products {
+  padding: 80px;
+  background: #0d0d0d;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: rotateX(8deg) rotateY(-8deg) scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 10px 0;
+}
+
+.card span {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #e10600;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  opacity: 0.6;
+}
