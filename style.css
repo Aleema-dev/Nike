@@ -162,6 +162,7 @@ footer {
 }
 .product-card{
   width:300px;
+  laptop:Normal size;
   
 }
 @media screen and ( max-width: 768px){
@@ -171,5 +172,7 @@ footer {
   }
   .product-card{
     width:90%;
+    mobile:fits screen width;
   }
 }
+
