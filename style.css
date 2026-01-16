@@ -151,28 +151,25 @@ footer {
   background: #000;
   opacity: 0.6;
 }
-.product-grid{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-  
-}
-.product-card{
-  width:300px;
-  laptop:Normal size;
-  
-}
-@media screen and ( max-width: 768px){
-  .product-grid{
-    flex-direction:column;
-    align-items:center;
-  }
-  .product-card{
-    width:90%;
-    mobile:fits screen width;
-  }
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
+.card {
+    width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
